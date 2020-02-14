@@ -142,8 +142,7 @@
     width: 700px;
     height: 200px;
     border-radius: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
 }
 
 .phone {
@@ -162,9 +161,26 @@
     transform: translateX(-50%);
 } 
 
+.adress {
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    bottom: 10px;
+    height: 200px;
+}
+
+.footer-wr {
+    position: absolute;
+    width: 1000px;
+    height: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media only screen and (max-width: 500px) {
     .bg {
-        height: 1620px;
+        height: 1800px;
     }
 
     .logo {
@@ -203,17 +219,26 @@
         margin: 0 10px
     }
 
+    .footer-wr {
+        width: 94%;
+        margin: 0 3%;
+        height: 450px;
+    }
 
     .footer {
-        padding-top: 30px;
-        width: 94%;
-        position: relative;
-        margin-bottom: 10px;
-        top: 220px
+        width: 100%;
+        top: 10px;
+        left: -3%;
+    }
+
+    .adress {
+        width: 100%;
+        margin: 0 3%;
     }
 
     .footer img {
-        width: 70%;
+        margin-top: 20px;
+        width: 90%;
         height: 100px;
     }
 
